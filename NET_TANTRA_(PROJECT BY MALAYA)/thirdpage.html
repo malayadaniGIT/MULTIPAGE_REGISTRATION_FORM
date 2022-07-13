@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">   
+    <link rel="stylesheet" href="styy.css">
+
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <script>
+        function Register(){
+            let text = "Are you sured";
+            if (confirm(text) == true) {
+                text = "Successfully Registered";
+            } else {
+                text = "Registration cancelled";
+            } 
+       }
+    </script>   
+    <div class="container">
+        <header>REGISTRATION</header>
+        <header1>Documentation</header1>
+        <form action="#">
+                    <div>
+                            <div class="fields">
+                                
+                            <div class="input-field">
+                                <label>Passport Photo</label>
+                                <input type="file" id="image_file"required>
+                            </div><br>
+
+                            <div class="input-field">
+                                <label>HSC Marksheet</label>
+                                <input type="file" id="hsc_file"mandatory>
+                            </div><br>
+
+                            <div class="input-field">
+                                <label>SSC Marksheet</label>
+                                <input type="file" id="ssc_file"required>
+                            </div><br>
+
+                            <div class="input-field">
+                                <label>GRADUATION Marksheet</label>
+                                <input type="file" id="grad_file"required>
+                            </div><br>
+
+                            <div class="input-field">
+                                <label>PG All semester Marksheet</label>
+                                <input type="file" id="allsem_file"required>
+                            </div><br><br><br><br>
+                        
+
+                                 <div>
+                                    <button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">REGISTER</button>
+                                    <button1 type="button" class="btn btn-default" onclick="Register()"><a href="secondpage.html">PREVIOUS PAGE</a></button>      
+                                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="reggg.js"></script>
+</html>
